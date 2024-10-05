@@ -1,5 +1,5 @@
 # ProFuse
-## [A Test Program Prioritization Method Based on Multi-Dimensional Feature Fusion for Logic Synthesis Tools Testing](https://github.com/LoSyTe/ProFuse)
+## [A Test Program Prioritization Method Based on Multi-Dimensional Feature Fusion for Logic Synthesis Tools Testing](https://github.com/ProFuse-method/ProFuse)
 **The logic synthesis tools we tested include:**
 1. **Commercial Logic Synthesis Tool Vivado (latest version 2024.1)**
 2. **Open Source Logic Synthesis Tool Yosys (latest version 0.30 + 48)**
@@ -58,44 +58,34 @@ These errors in the error file can be reproduced using Vivado 2024.1 and Yosys 0
 
 You can find all bug files in path `method/bugs`.
 
-Fault1：vivado	7BrmgwSAB	 HARTHOptPost::optimize() function triggers a crash during Vivado synthesis.
+Fault1：vivado	7mgyBdSAI	 A critical error during Vivado synthesis is surfacing in the DFPin::range() function.
 
-Fault2：vivado	7jBos5SAC  Synthesis failure due to an unexpected fault in the HARTGLAddGen() function.
+Fault2：vivado	7oSDeISAW  An essential issue arises in Vivado synthesis, within the \texttt{\detokenize{ConstProp::propagate()}} function.
 
-Fault3：vivado	7jBooqSAC	 Error invoking Tcl\_Panic function, triggering synthesis termination.
+Fault3：vivado	7qdVNFSA2	 In the course of Vivado synthesis, a critical error manifests within the \texttt{\detokenize{NDes::optimize ()}} function.
 
-Fault4：vivado	7mhiM4SAI	 Synthesis failure is encountered as a consequence of a crash initiated by the NBaseModC::realModule()function.
+Fault4：vivado	7iVN3hSAG	 Vivado Synthesis Crashes Due to Exception in \texttt{\detokenize{librdi_common.so}}.
 
-Fault5：vivado	7hvpQPSAY	 The HARTOptMux::findEnc() function triggers a Vivado crash, resulting in synthesis failure.
+Fault5：vivado	8S1pCRSAZ	 Vivado synthesis is running into an issue because the \texttt{\detokenize{DFGraph::traverseTopDown()}} function is causing a crash.
 
-Fault6：vivado	7HkoVvSAJ	 The HARTNDb::elaborate function triggered a Vivado crash, causing the synthesis to fail.
+Fault6：vivado	8TFwQ8SAL	 The \texttt{\detokenize{HARTNDb::reSynthReInfer()}} function is crashing and causing a problem with Vivado synthesis.
 
-Fault7：vivado	7k0SoLSAU	 Vivado synthesis failure is attributed to a crash triggered by the ConstProp::evaluate() function.
+Fault7：vivado	8TP2WdSAL	 Vivado synthesis is experiencing difficulties due to a crash in the \texttt{\detokenize{ComMsgMgr::sendMessage()}} function.
 
-Fault8：vivado	7k0StYSAU	 The NPinC::parentModule() function is causing Vivado to crash.
+Fault8：vivado	8VHDxiSAH	 Vivado synthesis failed by the \texttt{\detokenize{HRTInvoker::inProcessLaunch()}} function.
 
-Fault9：vivado	7lpEt6SAE	 Vivado synthesis is hitting a roadblock with a crash initiated by the HARTHOptPost::prepDsps() function.
+Fault9：vivado	8gIPllSAG	 The \texttt{\detokenize{LOptAbc::doOpt()}} function is causing an error that disrupts Vivado synthesis.
 
-Fault10：vivado	7rbE4ISAU	 Vivado Synthesis Crashes and Unable to Locate Problematic Function in Log Files.
+Fault10：vivado	8g0ri2SAA	 Vivado synthesis is failing because the \texttt{\detokenize{NDes::optimizeLogic()}} function is crashing.
 
-Fault11：vivado	7lRrQrSAK	 The HARTNDb::constProp() function is provoking a Vivado crash.
+Fault11：vivado	8g0tKYSAY	 Vivado Synthesis Hang Issue with Specific Design File.
 
-Fault12：vivado	7yJmiPSAS	 Vivado Synthesis Crashes and Unable to Locate Problematic Function in Log Files.
+Fault12：vivado	8g0tqRSAQ	 Vivado Tool Synthesis Hanging Problem on Ubuntu.
 
-Fault13：vivado	7p4vsSSAQ	 Synthesis is failing due to an fault within the DFNode::findDFPin() function.
+Fault13：vivado	8UddyJSAR	 Vivado Hang During Synthesis with Specific Constraints.
 
-Fault14：vivado	7iVNTSSA4	 When synthesizing, an fault occurs in the SPinArray::createBus() function.
+Fault14：yosys	   4427	   Yosys Verilog Parsing Error: Unable to Synthesize After Reading File.
 
-Fault15：vivado	7lRrQrSAK	 The exception in the HRTInvoker::inProcessLaunch() function results in synthesis failure.
-
-Fault16：vivado	7ZIdXVSA1	 Inconsistent Simulation Results Due to Logic Synthesis Optimization Issue.
-
-Fault17：yosys	   4079	   Issue in Yosys Synthesis: 'std::length\_fault' Leads to Termination.
-
-Fault18：yosys	   4056	   Long runtime and high memory usage for synth.
-
-Fault19：yosys	   4071	   Assertion Failure in AST Processing during Verilog Synthesi.
-
-Fault20：yosys	   4077	   Yosys Verilog Parsing fault: Issue in AST Generation.
+Fault15：yosys	   4445	   Performance Issue: Synthesis Takes Too Long to Complete.
 ***
 **We've had so much help from Vivado and Yosys staff in finding and confirming bugs. I would like to express my gratitude here.**
