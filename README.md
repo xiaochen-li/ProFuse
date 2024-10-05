@@ -1,12 +1,12 @@
 # ProFuse
 ## [A Test Program Prioritization Method Based on Multi-Dimensional Feature Fusion for Logic Synthesis Tools Testing](https://github.com/ProFuse-method/ProFuse)
 **The logic synthesis tools we tested include:**
-1. **Commercial Logic Synthesis Tool Vivado (latest version 2024.1)**
+1. **Commercial Logic Synthesis Tool Vivado (latest version 2023.2 and 2024.1)**
 2. **Open Source Logic Synthesis Tool Yosys (latest version 0.30 + 48)**
 ***
 
 **Env dependencies:**
-1. **Vivado 2024.1**
+1. **Vivado 2023.2 and 2024.1**
 2. **Yosys 0.30 + 48**
 3. **Icarus Verilog 13.0**
 4. **Verismith 1.0.0.2**
