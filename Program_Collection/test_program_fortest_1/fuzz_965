@@ -1,0 +1,90 @@
+(* use_dsp48="no" *) (* use_dsp="no" *) module top  (y, clk, wire3, wire2, wire1, wire0);
+  output wire [(32'hfa):(32'h0)] y;
+  input wire [(1'h0):(1'h0)] clk;
+  input wire signed [(5'h13):(1'h0)] wire3;
+  input wire signed [(3'h6):(1'h0)] wire2;
+  input wire [(4'h9):(1'h0)] wire1;
+  input wire [(4'h9):(1'h0)] wire0;
+  wire [(4'he):(1'h0)] wire24;
+  wire [(4'h8):(1'h0)] wire23;
+  wire signed [(5'h11):(1'h0)] wire22;
+  reg signed [(4'hf):(1'h0)] reg21 = (1'h0);
+  reg [(4'h8):(1'h0)] reg19 = (1'h0);
+  reg [(5'h13):(1'h0)] reg17 = (1'h0);
+  reg [(4'hd):(1'h0)] reg13 = (1'h0);
+  reg signed [(4'hf):(1'h0)] reg10 = (1'h0);
+  reg [(4'hd):(1'h0)] reg7 = (1'h0);
+  reg signed [(4'ha):(1'h0)] reg20 = (1'h0);
+  reg signed [(4'hf):(1'h0)] reg18 = (1'h0);
+  reg [(2'h2):(1'h0)] reg16 = (1'h0);
+  reg signed [(3'h6):(1'h0)] forvar15 = (1'h0);
+  reg signed [(5'h15):(1'h0)] reg14 = (1'h0);
+  reg [(4'hc):(1'h0)] reg12 = (1'h0);
+  reg signed [(5'h12):(1'h0)] reg11 = (1'h0);
+  reg signed [(4'he):(1'h0)] forvar9 = (1'h0);
+  reg signed [(2'h3):(1'h0)] forvar8 = (1'h0);
+  reg signed [(3'h4):(1'h0)] reg6 = (1'h0);
+  reg signed [(5'h12):(1'h0)] forvar5 = (1'h0);
+  reg [(3'h4):(1'h0)] forvar4 = (1'h0);
+  assign y = {wire24,
+                 wire23,
+                 wire22,
+                 reg21,
+                 reg19,
+                 reg17,
+                 reg13,
+                 reg10,
+                 reg7,
+                 reg20,
+                 reg18,
+                 reg16,
+                 forvar15,
+                 reg14,
+                 reg12,
+                 reg11,
+                 forvar9,
+                 forvar8,
+                 reg6,
+                 forvar5,
+                 forvar4,
+                 (1'h0)};
+  always
+    @(posedge clk) begin
+      for (forvar4 = (1'h0); (forvar4 < (3'h4)); forvar4 = (forvar4 + (1'h1)))
+        begin
+          for (forvar5 = (1'h0); (forvar5 < (1'h1)); forvar5 = (forvar5 + (1'h1)))
+            begin
+              reg6 = (~^forvar5[(4'h8):(3'h5)]);
+              reg7 <= (8'ha9);
+            end
+        end
+      for (forvar8 = (1'h0); (forvar8 < (3'h4)); forvar8 = (forvar8 + (1'h1)))
+        begin
+          for (forvar9 = (1'h0); (forvar9 < (1'h1)); forvar9 = (forvar9 + (1'h1)))
+            begin
+              reg10 <= reg7;
+              reg11 = (~|{forvar4[(2'h3):(2'h2)]});
+              reg12 = reg6[(1'h0):(1'h0)];
+              reg13 <= $unsigned(wire3[(4'hc):(4'h8)]);
+            end
+          reg14 = $signed($unsigned(($unsigned(reg10[(4'h8):(3'h7)]) & $signed($signed(forvar5)))));
+          for (forvar15 = (1'h0); (forvar15 < (1'h0)); forvar15 = (forvar15 + (1'h1)))
+            begin
+              reg16 = (((reg6 ? (~forvar4) : (8'hac)) ?
+                      $signed(((~reg14) ?
+                          (wire0 ?
+                              reg13 : (8'hab)) : $unsigned((8'hab)))) : reg13[(1'h0):(1'h0)]) ?
+                  $unsigned(reg12[(1'h0):(1'h0)]) : forvar4);
+              reg17 <= $signed($signed($unsigned((!(+(7'h44))))));
+              reg18 = ($signed(wire2) ^ forvar8);
+              reg19 <= $signed(reg11[(5'h11):(5'h11)]);
+            end
+          reg20 = (+reg11[(4'hf):(1'h0)]);
+          reg21 <= forvar15[(2'h2):(1'h0)];
+        end
+    end
+  assign wire22 = $signed($unsigned(wire3[(5'h11):(4'hb)]));
+  assign wire23 = wire22;
+  assign wire24 = (+{($unsigned($unsigned(reg10)) ?
+                          $unsigned($signed(reg13)) : wire23[(3'h4):(2'h2)])});
+endmodule
