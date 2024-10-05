@@ -34,21 +34,41 @@ Using ProFuse, we find 15 new and confirmed faults in two typical logic synthesi
 
 ***
 ### Main File
-Our methodology is located in the 'method' directory:
+Our methodology is located in the 'main' directory:
 
-1.The "LoSyTe_method" directory features our proposed LoSyTe algorithm's implementation, which includes:
+1.The "main" folder:
 
-(1)LoSyTe.py: The main function and the first component (Configuration selection component) for dynamic parameter configuration acquisition.
-(2)get_reward.py: Evaluates each round's parameter configuration, incorporating the second (Test-program vectorization component) and third components (Equivalence checking component).
-(3)get_feature.py: Calculates feature vectors for each test program.
-(4)get_faults_number.py: Counts the number of faults discovered in the test programs generated each round.
-(5)config.toml and config_update.py: config.toml is the parameter configuration file, and config_update.py updates this file with the latest parameter configuration combinations after each round.
+This folder contains the implementation of our proposed ProFuse method, which includes:
 
-2.The "Baseline" folder:
+ProFuse_main.py: The main function and core logic of the ProFuse method, which is responsible for feature fusion and fault prediction. It integrates both syntactic and structural features for effective logic synthesis tool testing.
 
-Contains the implementation of the five comparison algorithms used in this study: Default, Swarm, HIS, RECORD, and MCS.
+2.The "Program_Collection" folder:
 
-3.The "Faults" folder:
+This folder contains the dataset we collected for training and testing purposes. It includes various Verilog design files and test cases used in the evaluation of the ProFuse method.
+
+3.The "Objective_Evaluation_Metrics" folder:
+
+This folder contains the code for calculating the evaluation metrics used in the study. It includes metrics like APFD (Average Percentage of Faults Detected) to measure the effectiveness of the test program prioritization.
+
+APFD.py: Calculates the APFD metric for evaluating the prioritization performance.
+
+4.The "Feature_Preprocessing_code" folder:
+
+This folder contains the code used for preprocessing features. It includes scripts for extracting syntactic and structural features from the Verilog design files.
+
+get_syntactic_feature.py: Extracts syntactic features from the design files.
+get_structure_feature.py: Extracts structural features based on the data flow and circuit connections.
+
+5.The "baseline" folder:
+
+This folder contains the implementations of the baseline algorithms used for comparison in our study. It includes:
+
+baseline_LET.py: Implementation of the LET baseline algorithm.
+baseline_MO-SDC.py: Implementation of the MO-SDC baseline algorithm.
+baseline_RA.py: Implementation of the RA baseline algorithm.
+baseline_TF-PS.py: Implementation of the TF-PS baseline algorithm.
+
+6.The "Faults" folder:
 
 Includes the defects discovered in the Vivado and Yosys logic synthesis tools. Each error file comes with a fault_description.pdf detailing the conditions that trigger the fault and an explanation of the error.
 ***
