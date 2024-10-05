@@ -80,23 +80,23 @@ You can find all bug files in path `method/bugs`.
 
 Fault1：vivado	7mgyBdSAI	 A critical error during Vivado synthesis is surfacing in the DFPin::range() function.
 
-Fault2：vivado	7oSDeISAW  An essential issue arises in Vivado synthesis, within the \texttt{\detokenize{ConstProp::propagate()}} function.
+Fault2：vivado	7oSDeISAW  An essential issue arises in Vivado synthesis, within the ConstProp::propagate() function.
 
-Fault3：vivado	7qdVNFSA2	 In the course of Vivado synthesis, a critical error manifests within the \texttt{\detokenize{NDes::optimize ()}} function.
+Fault3：vivado	7qdVNFSA2	 In the course of Vivado synthesis, a critical error manifests within the NDes::optimize () function.
 
-Fault4：vivado	7iVN3hSAG	 Vivado Synthesis Crashes Due to Exception in \texttt{\detokenize{librdi_common.so}}.
+Fault4：vivado	7iVN3hSAG	 Vivado Synthesis Crashes Due to Exception in librdi_common.so.
 
-Fault5：vivado	8S1pCRSAZ	 Vivado synthesis is running into an issue because the \texttt{\detokenize{DFGraph::traverseTopDown()}} function is causing a crash.
+Fault5：vivado	8S1pCRSAZ	 Vivado synthesis is running into an issue because the DFGraph::traverseTopDown() function is causing a crash.
 
-Fault6：vivado	8TFwQ8SAL	 The \texttt{\detokenize{HARTNDb::reSynthReInfer()}} function is crashing and causing a problem with Vivado synthesis.
+Fault6：vivado	8TFwQ8SAL	 The HARTNDb::reSynthReInfer() function is crashing and causing a problem with Vivado synthesis.
 
-Fault7：vivado	8TP2WdSAL	 Vivado synthesis is experiencing difficulties due to a crash in the \texttt{\detokenize{ComMsgMgr::sendMessage()}} function.
+Fault7：vivado	8TP2WdSAL	 Vivado synthesis is experiencing difficulties due to a crash in the ComMsgMgr::sendMessage() function.
 
-Fault8：vivado	8VHDxiSAH	 Vivado synthesis failed by the \texttt{\detokenize{HRTInvoker::inProcessLaunch()}} function.
+Fault8：vivado	8VHDxiSAH	 Vivado synthesis failed by the HRTInvoker::inProcessLaunch() function.
 
-Fault9：vivado	8gIPllSAG	 The \texttt{\detokenize{LOptAbc::doOpt()}} function is causing an error that disrupts Vivado synthesis.
+Fault9：vivado	8gIPllSAG	 The LOptAbc::doOpt() function is causing an error that disrupts Vivado synthesis.
 
-Fault10：vivado	8g0ri2SAA	 Vivado synthesis is failing because the \texttt{\detokenize{NDes::optimizeLogic()}} function is crashing.
+Fault10：vivado	8g0ri2SAA	 Vivado synthesis is failing because the NDes::optimizeLogic() function is crashing.
 
 Fault11：vivado	8g0tKYSAY	 Vivado Synthesis Hang Issue with Specific Design File.
 
