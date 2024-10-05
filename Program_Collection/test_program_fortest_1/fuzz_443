@@ -1,0 +1,241 @@
+(* use_dsp48="no" *) (* use_dsp="no" *) module top  (y, clk, wire3, wire2, wire1, wire0);
+  output wire [(32'h49):(32'h0)] y;
+  input wire [(1'h0):(1'h0)] clk;
+  input wire [(4'ha):(1'h0)] wire3;
+  input wire signed [(3'h5):(1'h0)] wire2;
+  input wire signed [(4'ha):(1'h0)] wire1;
+  input wire signed [(4'h9):(1'h0)] wire0;
+  wire signed [(4'ha):(1'h0)] wire70;
+  wire [(4'h9):(1'h0)] wire65;
+  wire [(4'ha):(1'h0)] wire7;
+  wire [(3'h6):(1'h0)] wire6;
+  wire signed [(4'hb):(1'h0)] wire5;
+  wire [(3'h7):(1'h0)] wire4;
+  reg [(4'h8):(1'h0)] reg69 = (1'h0);
+  reg [(4'h8):(1'h0)] reg68 = (1'h0);
+  reg signed [(2'h3):(1'h0)] reg67 = (1'h0);
+  assign y = {wire70,
+                 wire65,
+                 wire7,
+                 wire6,
+                 wire5,
+                 wire4,
+                 reg69,
+                 reg68,
+                 reg67,
+                 (1'h0)};
+  assign wire4 = wire0;
+  assign wire5 = (^~wire2);
+  assign wire6 = $signed((-($signed((8'ha9)) ? wire2 : (~^wire2))));
+  assign wire7 = (|($signed((wire4 ? wire4 : (8'ha8))) ?
+                     {$signed((8'ha4))} : (&(wire1 ? wire3 : wire5))));
+  module8 #() modinst66 (wire65, clk, wire7, wire4, wire3, wire5);
+  always
+    @(posedge clk) begin
+      reg67 <= (wire7[(2'h3):(1'h1)] ? (8'hae) : wire5);
+      if (wire1[(2'h3):(2'h3)])
+        begin
+          reg68 <= $unsigned($signed(wire3));
+        end
+      else
+        begin
+          reg68 <= wire65[(3'h4):(2'h3)];
+          reg69 <= (wire6 ?
+              $unsigned($unsigned($unsigned(wire5))) : ($signed(((8'hb0) ?
+                      reg68 : wire65)) ?
+                  wire4 : wire65));
+        end
+    end
+  assign wire70 = wire5;
+endmodule
+
+(* use_dsp48="no" *) (* use_dsp="no" *) module module8  (y, clk, wire12, wire11, wire10, wire9);
+  output wire [(32'h60):(32'h0)] y;
+  input wire [(1'h0):(1'h0)] clk;
+  input wire [(4'ha):(1'h0)] wire12;
+  input wire signed [(3'h7):(1'h0)] wire11;
+  input wire [(4'ha):(1'h0)] wire10;
+  input wire signed [(3'h7):(1'h0)] wire9;
+  wire signed [(3'h7):(1'h0)] wire64;
+  wire signed [(2'h2):(1'h0)] wire58;
+  wire [(3'h6):(1'h0)] wire54;
+  wire [(4'h9):(1'h0)] wire31;
+  wire signed [(3'h4):(1'h0)] wire30;
+  wire signed [(3'h7):(1'h0)] wire28;
+  wire signed [(4'h8):(1'h0)] wire15;
+  wire signed [(4'h9):(1'h0)] wire14;
+  wire signed [(3'h6):(1'h0)] wire13;
+  reg signed [(3'h6):(1'h0)] reg63 = (1'h0);
+  reg signed [(2'h3):(1'h0)] reg62 = (1'h0);
+  reg [(2'h2):(1'h0)] reg61 = (1'h0);
+  reg [(4'hb):(1'h0)] reg60 = (1'h0);
+  reg [(4'h9):(1'h0)] reg57 = (1'h0);
+  reg signed [(3'h6):(1'h0)] reg56 = (1'h0);
+  assign y = {wire64,
+                 wire58,
+                 wire54,
+                 wire31,
+                 wire30,
+                 wire28,
+                 wire15,
+                 wire14,
+                 wire13,
+                 reg63,
+                 reg62,
+                 reg61,
+                 reg60,
+                 reg57,
+                 reg56,
+                 (1'h0)};
+  assign wire13 = wire9[(3'h6):(2'h3)];
+  assign wire14 = wire9;
+  assign wire15 = $unsigned((8'ha2));
+  module16 #() modinst29 (.wire18(wire14), .y(wire28), .wire17(wire11), .wire20(wire13), .wire19(wire9), .clk(clk));
+  assign wire30 = (($unsigned((8'had)) ?
+                      (~|wire28[(3'h5):(1'h0)]) : $signed($signed(wire12))) ^ (wire28[(3'h4):(3'h4)] <= $signed((~&wire28))));
+  assign wire31 = wire14;
+  module32 #() modinst55 (wire54, clk, wire15, wire31, wire30, wire12);
+  always
+    @(posedge clk) begin
+      reg56 <= (wire11 ? wire11 : ($signed((+wire54)) < wire14));
+      reg57 <= ((+($unsigned(wire10) ?
+          wire13[(3'h6):(2'h3)] : $signed(wire31))) | (8'had));
+    end
+  module32 #() modinst59 (wire58, clk, wire12, wire15, wire9, wire10);
+  always
+    @(posedge clk) begin
+      if ({$unsigned($unsigned((!reg56)))})
+        begin
+          reg60 <= wire11;
+          reg61 <= ($signed((|(wire11 ?
+              reg56 : wire10))) | (^$signed($signed(wire30))));
+        end
+      else
+        begin
+          if (({reg57} ~^ ((wire13[(3'h5):(2'h2)] * wire14[(3'h7):(3'h6)]) ^~ wire9)))
+            begin
+              reg60 <= (8'haf);
+              reg61 <= (wire11 ?
+                  wire13[(2'h2):(1'h1)] : ($signed((-wire30)) >= ($unsigned(wire10) ?
+                      $unsigned(wire31) : wire9[(3'h4):(3'h4)])));
+              reg62 <= wire9[(2'h2):(2'h2)];
+            end
+          else
+            begin
+              reg60 <= $unsigned($unsigned(wire14[(2'h3):(2'h3)]));
+              reg61 <= (^$unsigned((reg61[(1'h0):(1'h0)] ?
+                  reg62 : (~&(8'ha9)))));
+              reg62 <= wire11[(1'h1):(1'h1)];
+            end
+          reg63 <= $unsigned({$unsigned((~&wire54))});
+        end
+    end
+  assign wire64 = {reg56[(3'h6):(3'h5)]};
+endmodule
+
+(* use_dsp48="no" *) (* use_dsp="no" *) module module32  (y, clk, wire36, wire35, wire34, wire33);
+  output wire [(32'h7f):(32'h0)] y;
+  input wire [(1'h0):(1'h0)] clk;
+  input wire [(4'h8):(1'h0)] wire36;
+  input wire [(3'h4):(1'h0)] wire35;
+  input wire signed [(3'h4):(1'h0)] wire34;
+  input wire signed [(4'ha):(1'h0)] wire33;
+  wire signed [(2'h3):(1'h0)] wire53;
+  wire signed [(4'ha):(1'h0)] wire52;
+  wire signed [(3'h6):(1'h0)] wire51;
+  wire [(4'h8):(1'h0)] wire50;
+  wire signed [(3'h6):(1'h0)] wire46;
+  wire signed [(4'h9):(1'h0)] wire42;
+  wire [(3'h6):(1'h0)] wire41;
+  wire signed [(4'hb):(1'h0)] wire40;
+  wire signed [(3'h5):(1'h0)] wire39;
+  wire [(4'h9):(1'h0)] wire38;
+  wire [(2'h3):(1'h0)] wire37;
+  reg [(4'ha):(1'h0)] reg49 = (1'h0);
+  reg [(2'h2):(1'h0)] reg48 = (1'h0);
+  reg [(4'hb):(1'h0)] reg47 = (1'h0);
+  reg [(4'h9):(1'h0)] reg45 = (1'h0);
+  reg signed [(4'hb):(1'h0)] reg44 = (1'h0);
+  reg [(3'h7):(1'h0)] reg43 = (1'h0);
+  assign y = {wire53,
+                 wire52,
+                 wire51,
+                 wire50,
+                 wire46,
+                 wire42,
+                 wire41,
+                 wire40,
+                 wire39,
+                 wire38,
+                 wire37,
+                 reg49,
+                 reg48,
+                 reg47,
+                 reg45,
+                 reg44,
+                 reg43,
+                 (1'h0)};
+  assign wire37 = wire34[(3'h4):(3'h4)];
+  assign wire38 = (({$signed(wire36)} > wire36) ^~ ($unsigned($signed(wire37)) ?
+                      (&wire34[(1'h0):(1'h0)]) : ((wire33 ?
+                          wire33 : wire34) <<< wire33)));
+  assign wire39 = wire37[(2'h2):(1'h0)];
+  assign wire40 = (^wire35[(3'h4):(1'h1)]);
+  assign wire41 = wire37[(2'h3):(2'h2)];
+  assign wire42 = wire41;
+  always
+    @(posedge clk) begin
+      reg43 <= $unsigned(wire36[(3'h7):(1'h1)]);
+      reg44 <= $signed((wire33[(1'h1):(1'h0)] ?
+          ((wire36 ? (8'ha7) : wire35) ? wire40 : $signed(wire34)) : (wire37 ?
+              (wire38 != wire42) : $signed(wire38))));
+      if (wire41)
+        begin
+          reg45 <= (^(wire36[(1'h1):(1'h0)] ?
+              ((wire34 <<< reg44) ?
+                  $signed((8'ha0)) : $signed(wire34)) : wire42[(3'h7):(3'h5)]));
+        end
+      else
+        begin
+          reg45 <= ((({(8'ha4)} >= wire36) != $unsigned((^~reg45))) - wire38[(2'h3):(1'h1)]);
+        end
+    end
+  assign wire46 = ((8'ha8) ? wire38 : wire40[(1'h1):(1'h1)]);
+  always
+    @(posedge clk) begin
+      reg47 <= reg44;
+      reg48 <= (8'ha2);
+      reg49 <= (reg47 ?
+          $unsigned($signed((reg47 <<< reg48))) : ($unsigned($signed(reg45)) ?
+              $signed(((8'h9e) >= wire35)) : $unsigned((^~wire40))));
+    end
+  assign wire50 = (^~(($unsigned(reg49) ?
+                      $unsigned(wire34) : $unsigned(reg43)) - (~^(&reg44))));
+  assign wire51 = reg49[(3'h4):(2'h2)];
+  assign wire52 = (^(8'h9e));
+  assign wire53 = $signed(((8'hac) + $signed(reg48)));
+endmodule
+
+(* use_dsp48="no" *) (* use_dsp="no" *) module module16
+#(parameter param27 = ((&((~(8'ha0)) ? (|(8'ha0)) : ((8'hab) > (8'h9d)))) & ({((8'had) << (8'hb0))} != ((~(8'hae)) * (+(8'ha5))))))
+(y, clk, wire20, wire19, wire18, wire17);
+  output wire [(32'h29):(32'h0)] y;
+  input wire [(1'h0):(1'h0)] clk;
+  input wire [(3'h6):(1'h0)] wire20;
+  input wire [(3'h5):(1'h0)] wire19;
+  input wire [(4'h9):(1'h0)] wire18;
+  input wire [(3'h7):(1'h0)] wire17;
+  wire signed [(3'h7):(1'h0)] wire26;
+  wire signed [(3'h5):(1'h0)] wire25;
+  wire [(2'h3):(1'h0)] wire24;
+  wire signed [(3'h7):(1'h0)] wire23;
+  wire [(4'h9):(1'h0)] wire22;
+  wire [(4'h9):(1'h0)] wire21;
+  assign y = {wire26, wire25, wire24, wire23, wire22, wire21, (1'h0)};
+  assign wire21 = $signed(wire20[(2'h3):(2'h2)]);
+  assign wire22 = (8'ha3);
+  assign wire23 = wire21[(4'h8):(1'h1)];
+  assign wire24 = {(+wire20[(2'h3):(2'h3)])};
+  assign wire25 = wire18[(1'h0):(1'h0)];
+  assign wire26 = $unsigned((-(~^(wire18 ? wire22 : wire17))));
+endmodule
